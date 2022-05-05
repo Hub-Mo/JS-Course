@@ -11,6 +11,12 @@
 
 (function() {
 
-    // your code here
+    let preFix = ("#")
+    function randomColor() {
+        const random = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = preFix + random;
+        
+    }
+    run.addEventListener('click', randomColor);
 
 })();
