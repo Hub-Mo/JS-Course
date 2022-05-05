@@ -9,8 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function again() {
 
-    // your code here
+    let age = prompt("what is your name?");
+    let gender = prompt("what is your gender");
+    let town = prompt("where do you live?");
+
+    if (confirm(`is this correct ? ${age} ${gender} ${town}`) == true){
+
+        alert("thank you");
+    }
+    else{
+        again();
+    }
+
 
 })();

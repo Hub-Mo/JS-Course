@@ -47,7 +47,7 @@ const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
 const createList = movies => {
   return `
     <ol>${movies
-    .map(movie => movie.title.toLowerCase())
+    .map(movie => movie.director.toLowerCase())
     .map(title => wrapWithTag(title, `li`))
     .join(``)}
     </ol>`;

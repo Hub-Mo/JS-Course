@@ -2,4 +2,5 @@
 ## EX 09
 * Notice how the 2 map functions are attached to eachother, this is called 'method chaining'
 * What does the parseTitle function do exactly?
+>it takes movies that start with THE and transforms them yo uppercase.
 * Notice how all the code is in the shape of functions.

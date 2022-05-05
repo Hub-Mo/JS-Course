@@ -10,7 +10,6 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    let name = prompt("what is your name ?")
+    alert("welkom " + name)
 })();

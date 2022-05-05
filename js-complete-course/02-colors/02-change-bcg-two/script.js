@@ -10,7 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
+    const inputColor = document.getElementById('color');
+    const runbutton = document.getElementById('run');
+    runbutton.addEventListener('click', changeColor);
 
-    // your code here
+// document.getElementById('run')
+function changeColor(){
+    // document.querySelector('body').style.backgroundColor = inputColor
+    const valueInput = inputColor.value;
+    document.body.style.backgroundColor = valueInput;
+}
+
+
+
 
 })();
