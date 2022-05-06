@@ -11,6 +11,44 @@
 
 (function() {
 
-    // your code here
+
+    let inputYear = new Date(document.getElementById('year').value);
+    let y = inputYear.getFullYear();
+    let btn = document.getElementById('run');
+    btn.addEventListener('click', log);
+
+
+    function log(){
+        console.log(y);
+    }
+
+    // function fri13(){
+    //     for (let month = 0; month < 11; month++){
+    //         let d = new Date(inputYear){
+
+    //         }
+    //     }
+    // }
+
+
+
+
+
+
+
+
+
+
+    // for(let year=1995; year <=2022; year++){
+    //     for (let month=0;month<11;month++){
+          
+            
+    //       let thirteen=new Date(year,month,13);
+    //       if(thirteen.getDay()==5 ){
+    //         var arr=['January','February','March','April','May','Jun','July','August','September','October','November','December'];
+    //     document.write('Friday 13 is on '+arr[month]+ ' '+ year + "<br>" );
+    //       }
+    //        }
+    //     }
 
 })();
