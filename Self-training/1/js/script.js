@@ -1,13 +1,25 @@
-let bonusPoints = 50
+// counter app training
 
-bonusPoints = bonusPoints + 100
+let count = 0;
 
-console.log(bonusPoints)
+document.getElementById('increment-btn').addEventListener('click', increment);
+let getElement = document.getElementById('display');
 
-bonusPoints = bonusPoints - 25
+document.getElementById('save-btn').addEventListener('click', save)
+let saveEl = document.getElementById('saved');
 
-console.log(bonusPoints)
+// incremening the count
+function increment() {
+    console.log("clicked") // to check if the eventlistener works.
+    count += 1;
+    getElement.innerHTML = count;
+}
 
-bonusPoints = bonusPoints + 70
-
-console.log(bonusPoints)
+//saving the count
+function save() {
+    let theCount = count + " - ";
+    saveEl.innerHTML += theCount;
+    // reset counter by clicking the save button
+    getElement.innerHTML = 0;
+    count = 0;
+}

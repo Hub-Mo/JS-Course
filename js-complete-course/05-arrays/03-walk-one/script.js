@@ -26,6 +26,15 @@
         "cherry",
     ];
 
-    // your code here
+    let btn = document.getElementById('run');
+    btn.addEventListener('click', print);
+    let arrayNumber = 0;
 
+    function print(){
+    for (let i = 0; i <= 11; i++) {
+        console.log(fruits[arrayNumber]);
+        arrayNumber += 1;
+
+    }
+    }
 })();
