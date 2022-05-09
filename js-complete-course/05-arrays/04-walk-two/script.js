@@ -25,7 +25,11 @@
         "raisin",
         "cerise",
     ];
-
-    // your code here
+    document.getElementById('run').addEventListener('click', eachFor);
+    function eachFor(){ 
+    fruits.forEach( item => {
+        console.log(item)
+    })
+    }
 
 })();
