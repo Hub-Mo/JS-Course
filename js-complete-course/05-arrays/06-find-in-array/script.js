@@ -89,6 +89,21 @@
         },
     ];
 
-    // your code here
+let test = document.getElementById('run');
+test.addEventListener('click', theMagic);
 
+
+function theMagic() {
+    people.forEach( item => {
+        if (item.lastname === "Dupont" && item.firstname === "Jean") {
+            console.log(item.email);
+            let index = people.findIndex( filterObj=> 
+            filterObj['firstname'] === 'Jean');
+            console.log(index);
+            }
+        else {
+            console.log("Not Here")
+        }
+    })
+}
 })();
