@@ -89,6 +89,7 @@
         },
     ];
 
-    // your code here
+    let newArray = people.filter(item => item ['age'] < 18);
+    console.log(newArray);
 
 })();
