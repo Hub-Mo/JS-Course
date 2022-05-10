@@ -72,9 +72,41 @@
 ## dom
 * [x] 01-select-one
 
+```javascript
+    document.getElementById('target').innerHTML = "Owned";
+```
+> The <mark>getElementById()</mark> method returns an element with a specified value.
+method returns null if the element does not exist.
+method is one of the most common methods in the HTML DOM. It is used almost every time you want to read or edit an HTML element.
+
+> The <mark>innerHTML</mark> property sets or returns the HTML content (inner HTML) of an element.
+
+
 * [x] 02-select-two
+```javascript
+    document.querySelector('.material>p').innerHTML = "Owned";
+```
+> The <mark>querySelector()</mark> method returns the first element that matches a CSS selector.
+To return all matches (not only the first), use the querySelectorAll() instead.
+
+> Both <mark>querySelector()</mark> and <mark>querySelectorAll()</mark> throw a SYNTAX_ERR exception if the selector(s) is invalid.
 
 * [x] 03-select-three
+```javascript
+    let text = document.getElementsByClassName('target');
+for (i = 0; i < text.length; i++) {
+    text[i].innerHTML = "owned";
+}
+```
+> The <mark>getElementsByClassName()</mark> method of Document interface returns an array-like object of all child elements which have all of the given class name(s).
+
+> When called on the document object, the complete document is searched, including the root node. You may also call <mark>getElementsByClassName()</mark> on any element; it will return only elements which are descendants of the specified root element with the given class name(s).
+
+> used <mark>for-loop</mark> to loop 'text-length' times to change all the classes. at first it was only changing the first one if you only use
+```javascript
+    text.innerHTML = "owned"; //doesnt do sh*t.
+    text.innerHTML[0] = "owned"; //Only changes the first one
+```
 
 * [x] 04-attr-create
 
