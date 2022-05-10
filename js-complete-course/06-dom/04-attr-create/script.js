@@ -10,7 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+let span = document.getElementById('source');
+let target = document.getElementById('target');
+let data = (span.getAttribute('data-image'));
+let img = document.createElement('img');
+img.src = data;
+target.append(img);
+span.removeAttribute('data-image');
 })();
