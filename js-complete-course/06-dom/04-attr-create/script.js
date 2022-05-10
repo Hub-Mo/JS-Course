@@ -11,7 +11,6 @@
 
 (function() {
 let span = document.getElementById('source');
-let target = document.getElementById('target');
 let data = (span.getAttribute('data-image'));
 let img = document.createElement('img');
 img.src = data;

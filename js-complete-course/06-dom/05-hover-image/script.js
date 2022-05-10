@@ -11,6 +11,17 @@
 
 (function() {
 
-    // your code here
+    let img = document.querySelector('.material>figure>img');
+    let hoverData = img.getAttribute('data-hover');
+    let original = img.getAttribute('src')
+    console.log(original);
 
+    img.addEventListener('mouseover', theMagic);
+
+    function theMagic() {
+        img.src = hoverData;
+    }
+    img.addEventListener('mouseout', function(){
+        img.src = original;
+    })
 })();
