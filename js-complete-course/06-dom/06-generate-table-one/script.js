@@ -21,30 +21,5 @@
     for (i = 0; i < 10; i++) {
         table.insertRow(0);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // <table>
-    //     <th>head</th>
-    //     <td>data</td>
-    //     <tr>row</tr>
-    //     <tr>row</tr>
-    //     <tr>row</tr>
-    //     <tr>row</tr>
-    //     <tr>row</tr>
-    //     <tr>row</tr>
-    //     <tr>row</tr>
-    //     <tr>row</tr>
-    //     <tr>row</tr>
-    //     <tr>row</tr>
-    // </table>
+
 })();
