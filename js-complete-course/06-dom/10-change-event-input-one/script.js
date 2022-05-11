@@ -10,7 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
+    let password = document.getElementById('pass-one');
+    let counter = document.getElementById('counter');
+    password.setAttribute('maxLength','10');
+    console.log(password);
 
-    // your code here
+    password.addEventListener('input', () => {
+        let passLength = password.value.length;
+        counter.innerHTML = passLength + '/10';
+    })
 
 })();
