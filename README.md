@@ -125,3 +125,15 @@ for (i = 0; i < text.length; i++) {
 * [] 11-change-event-input-two-**optional**
 ---
 * [] 12-mini-carousel-**optional**
+
+## fetch()
+
+* [x] 01-list-to-console
+---
+* [x] 02-details
+---
+* [] 03-list-to-complete-___optional___
+---
+* [] 04-add-___optional___
+---
+* [] 05-delete-___optional___
