@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+_shared
+package.json
+package-lock.json
+README kopie.md
