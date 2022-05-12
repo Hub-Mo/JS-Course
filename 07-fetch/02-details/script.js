@@ -22,16 +22,23 @@
         // parsing it into json format
         const data = await response.json();
 
-        const heroes = data.heroes;
-        console.log(heroes)
-
         // getting the id
-        let idInput = document.getElementById('hero-id').value;
+        let idInput = parseInt(document.getElementById('hero-id').value);
         let target = document.getElementById('target');
 
         data.heroes.forEach(hero => {
             if (hero.id == idInput) {
-                target.innerHTML = hero.name
+                let l1 = document.createElement('li');
+                let h4 = document.createElement('h4')
+                let pTag = document.createElement('p');
+                let em = document.createElement('em')
+                target.append(l1);
+                target.append(pTag);
+                l1.append(h4);
+                l1.append(em);
+                h4.innerHTML = hero.name;
+                pTag.innerHTML = hero.abilities;
+                em.innerHTML = hero.alterEgo;
             }
         })
     }
