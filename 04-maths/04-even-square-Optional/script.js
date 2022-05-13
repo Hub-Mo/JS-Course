@@ -13,7 +13,11 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+       let randomNumber = Math.floor(Math.random() * (21 - 1) + 1);
+       console.log(randomNumber);
+       let sqrt = Math.sqrt(randomNumber);
+       console.log(sqrt);
+       alert("The square of " + randomNumber + " is: " + sqrt);
 
     });
 

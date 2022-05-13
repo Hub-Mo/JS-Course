@@ -11,24 +11,13 @@
 
 (function() {
 
+    document.getElementById('run').addEventListener('click', () => {
 
-    let inputYear = new Date(document.getElementById('year').value);
-    let y = inputYear.getFullYear();
-    let btn = document.getElementById('run');
-    btn.addEventListener('click', log);
+        let input = document.getElementById('year').value;
+        console.log(input);
 
+    })
 
-    function log(){
-        console.log(y);
-    }
-
-    // function fri13(){
-    //     for (let month = 0; month < 11; month++){
-    //         let d = new Date(inputYear){
-
-    //         }
-    //     }
-    // }
 
 
 
