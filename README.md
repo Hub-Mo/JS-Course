@@ -136,4 +136,4 @@ for (i = 0; i < text.length; i++) {
 ---
 * [x] 04-add-___optional___
 ---
-* [] 05-delete-___optional___
+* [x] 05-delete-___optional___
