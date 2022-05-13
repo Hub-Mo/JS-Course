@@ -10,5 +10,28 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    document.getElementById('run').addEventListener('click', GoGo);
+
+    async function GoGo() {
+        let apiData = await fetch('http://localhost:3000/heroes')
+        let apiJson = await apiData.json();
+        console.log(apiJson);
+
+        let heroArray = [...apiJson]
+        console.log(heroArray);
+
+        let inputId = document.getElementById('hero-id').value;
+
+        heroArray.forEach(item => {
+            if (item.id == inputId){
+                let index = heroArray.findIndex((obj)=> obj === item);
+                heroArray.splice(index,1);
+                console.log(heroArray);
+            }
+        })
+
+
+    }
+
 })();
