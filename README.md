@@ -132,7 +132,7 @@ for (i = 0; i < text.length; i++) {
 ---
 * [x] 02-details
 ---
-* [] 03-list-to-complete-___optional___
+* [x] 03-list-to-complete-___optional___
 ---
 * [] 04-add-___optional___
 ---
